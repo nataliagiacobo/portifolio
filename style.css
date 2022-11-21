@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #06283D;
+    color: #256D85;
+    font-weight: 300;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+button {
+    color: #DFF6FF;
+    background-color: #06283D;
+}
+
+footer {
+    padding: 1rem 100px;
+    text-align: center;
+}
+
+h1 {
+    color: #DFF6FF;
+    font-size: 5rem;
+    display: inline-block;
+
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    color: #47B5FF;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+
+h5 {
+    font-weight: 300;
+}
+
+
+nav {
+    transition: opacity 2s;
+}
+
+#home {
+    /* height: calc(100vh - 56px); */
+
+    width: fit-content;
+    margin: auto;
+}
+
+.btn-outline-primary {
+    color: #47B5FF;
+    border-color: #47B5FF;
+    margin-top: 1.5rem;
+}
+
+.btn-outline-primary:hover {
+    color: #47B5FF;
+    border-color: #47B5FF;
+    background-color: #47b5ff28;
+}
+
+.container-img {
+    background-color: #0a3f5f;
+    color: #DFF6FF;
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.container-txt {
+    position: relative;
+    top: -250px;
+    left: 50%;
+    width: 50%;
+}
+
+.card-img {
+    opacity: 50%;
+}
+
+.card-img:hover {
+    opacity: 100%;
+}
+
+.container {
+    max-width: 100%;
+    min-height: calc(100vh - 56px);
+}
+
+.navbar {
+    /* background-color: #06283D; */
+    transition: background-color 2s ease 0s;
+    height: 10vh;
+    min-height: 50px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+
+    color: #47B5FF;
+}
+
+@media (max-width: 991.98px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        padding-bottom: 0;
+    }
+}
+
+.fa {
+    font-size: 1.5rem;
+}
+
+.line {
+    height: 250px;
+    width: 2px;
+    background-color: #256D85;
+}
+
+a i,
+.rotate a {
+
+    color: #256D85;
+    transition: 0.3s;
+}
+
+a i:hover {
+
+    color: #73b2c7;
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.rotate {
+    transform: rotate(90deg);
+    padding-right: 190px;
+}
+
+.rotate a:hover {
+
+    color: #73b2c7;
+    font-size: 1.1rem;
+    transition: 0.5s;
+}
