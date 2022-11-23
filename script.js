@@ -12,7 +12,6 @@
 
 var prevScrollPos = window.pageYOffset;
 window.onscroll = function () {
-    console.log("rodando");
     var currentScrollPos = window.pageYOffset;
     if (prevScrollPos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";

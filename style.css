@@ -61,7 +61,7 @@ nav {
     /* Black background color */
     position: fixed;
     /* Make it stick/fixed */
-    top: 5000px;
+    top: 0;
     /* Stay on top */
     width: 100%;
     /* Full width */
