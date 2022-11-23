@@ -120,6 +120,9 @@ nav {
     margin: 1rem 0;
 }
 
+.card p {
+    font-weight: 200;
+}
 
 .container {
     max-width: 100%;
