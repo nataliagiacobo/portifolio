@@ -11,6 +11,9 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -21,119 +24,201 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4be73d8532.js" crossorigin="anonymous"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-dark navbar-expand-md">
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-md px-3">
         <div class="container-fluid">
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
+            </button>
             <a class="navbar-brand" href="#">
                 <img src="images/logo2.png" alt="logo" height="35px">
             </a>
-            <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo03"> -->
-            <div>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
-                    </li>
-                    <!-- <li class="nav-item">
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarTogglerDemo03">
+                <div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link m-2" aria-current="page" href="#sobre">Sobre</a>
+                        </li>
+                        <!-- <li class="nav-item">
                         <a class="nav-link" href="#experiencias">Experiências</a>
                     </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#trabalhos">Trabalhos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Currículo</a>
-                    </li>
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link m-2" href="#trabalhos">Trabalhos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-2" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item m-auto">
+
+                            <a class="btn btn-outline-primary mx-2 p-2"
+                                href="./Currículo_Natalia_Giacobo_Rohr_nov2022.pdf"
+                                download="Currículo_Natalia_Giacobo_Rohr">Currículo</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
     </nav>
 
 
     <main>
         <div class="container">
             <div class="row">
+
+                <!-- Barra lateral -->
                 <div class="col-1 d-flex justify-content-center align-items-center">
-                    <div class="position-fixed bottom-0  text-center">
+                    <div class="icons position-fixed bottom-0  text-center">
                         <p>
-                            <a href="https://wa.me/5545999110182">
+                            <a href="https://wa.me/5545999110182" target="_blank">
                                 <i class="fa fa-whatsapp"></i>
                             </a>
                         </p>
                         <p>
-                            <a href=""><i class="fa fa-github"></i></a>
+                            <a href="https://github.com/nataliagiacobo" target="_blank"><i class="fa fa-github"></i></a>
                         </p>
                         <p>
-                            <a href=""><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/nataliagiacobo/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
                         </p>
                         <p>
-                            <a href=""><i class="fa fa-map-marker"></i></a>
+                            <a href="https://goo.gl/maps/YCAs4ov9PF7Q4idi9" target="_blank"><i
+                                    class="fa fa-map-marker"></i></a>
                         </p>
                         <div class="line m-auto"></div>
                     </div>
 
                 </div>
+
+                <!-- Site -->
                 <div class="col-10">
-                    <div class="row">
-                        <div class="col-12 d-flex align-items-center justify-content-center" style="height: 90vh;">
+                    <div class="row  justify-content-md-center">
+                        <div class="col-10  d-flex align-items-center justify-content-center m-auto"
+                            style="height: 90vh;">
                             <div id="home" class="align-middle">
                                 <h3>Olá, meu nome é</h3>
                                 <h1>Natalia Giacobo Rohr.</h1>
                                 <h2>Sou desenvolvedora Full-Stack.</h2>
-                                <a href="#" class="btn btn-lg btn-outline-primary">Entre em contato</a>
+                                <a href="#" class="btn btn-lg btn-outline-primary mt-3">Entre em contato</a>
                             </div>
                         </div>
-                        <div class="col-12 justify-content-center" style="min-height: 100vh;">
-                            <div id="sobre">
+                        <div class="col-12 col-sm-10 justify-content-center m-auto ">
+                            <div id="sobre" class="py-5">
                                 <h3>Sobre</h3>
+                                <div class="card p-5">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo voluptas
+                                        consequatur asperiores quidem velit doloremque a dolores minima nam debitis
+                                        recusandae iusto repellat cupiditate, fugit corporis id. Eum, porro ut.</p>
+                                    <p>
+
+                                        Minus modi velit natus? Laborum atque earum consequuntur esse nostrum voluptate,
+                                        suscipit a, asperiores delectus fugit neque tenetur odit, illo sequi consequatur
+                                        nobis ipsa quae adipisci? Harum libero impedit nisi.
+                                    </p>
+                                    <p>
+
+                                        Distinctio architecto tempore, odio fugit magni tenetur culpa debitis harum nisi
+                                        sunt beatae placeat sed enim eius illum recusandae possimus similique sit nihil
+                                        laudantium voluptatibus accusantium. Repellat eveniet quas quibusdam.
+                                        Esse fugit modi vel, quidem voluptas aliquid molestiae impedit laborum velit rem
+                                        sint asperiores consequuntur assumenda sed omnis ratione ullam maxime temporibus
+                                        iusto aliquam veritatis adipisci. Saepe modi aut ratione.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12 justify-content-center" style="min-height: 100vh;">
-                            <div id="trabalhos" class="container">
+                        <div class="col-12 col-sm-10 justify-content-center m-auto ">
+                            <div id="trabalhos" class=" py-5">
                                 <h3>Trabalhos</h3>
-                                <div class="row box">
-                                    <div class="container-img">
-                                        <a href="https://nataliagiacobo.github.io/TinDog/">
-                                            <img class="card-img" src="images/tindog.png" alt="tindog" width="60%">
-                                        </a>
-                                    </div>
-                                    <div class="card container-txt">
-                                        <div class="card-title">
-                                            <h5>TinDog</h5>
-                                            <a href="">sfff
-                                                <i class="fa fa-github" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h5>TinDog</h5>
+                                                </div>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Laudantium
+                                                    eligendi
+                                                    adipisci laborum ut
+                                                    earum.</p>
+                                                <p class="card-text">Tecnologias: HTML, CSS, JavaScript</p>
 
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi
-                                            adipisci laborum ut
-                                            earum.</p>
+                                                <a href="#" class="btn btn-outline-primary btn-sm float-end button">Ver
+                                                    mais</a>
+
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h5>TinDog</h5>
+                                                </div>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Laudantium
+                                                    eligendi
+                                                    adipisci laborum ut
+                                                    earum.</p>
+                                                <p class="card-text">Tecnologias: HTML, CSS, JavaScript</p>
+                                                <a href="#" class="btn btn-outline-primary btn-sm float-end button">Ver
+                                                    mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h5>TinDog</h5>
+                                                </div>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Laudantium
+                                                    eligendi
+                                                    adipisci laborum ut
+                                                    earum.</p>
+                                                <p class="card-text">Tecnologias: HTML, CSS, JavaScript</p>
+                                                <a href="#" class="btn btn-outline-primary btn-sm float-end button">Ver
+                                                    mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h5>TinDog</h5>
+                                                </div>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Laudantium
+                                                    eligendi
+                                                    adipisci laborum ut
+                                                    earum.</p>
+                                                <p class="card-text">Tecnologias: HTML, CSS, JavaScript</p>
+                                                <a href="#" class="btn btn-outline-primary btn-sm float-end button">Ver
+                                                    mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
 
-                        <div>
-                            <div id="contato" class="col-12 justify-content-center" style="min-height: 100vh;">
+                        <div class="col-10 justify-content-center m-auto">
+                            <div id="contato" class=" py-5">
                                 <h3>Contato</h3>
-                                <div>
+                                <div class="col-12 col-sm-6 justify-content-center m-auto ">
+                                    <p>
+                                        <i class="fa fa-whatsapp"></i>
+                                        (45) 99911-0182
+                                    </p>
 
-                                    <a href="https://wa.me/5545999110182">
-                                        <p>
-                                            <i class="fa fa-whatsapp"></i>
-                                            (45) 99911-0182
-                                        </p>
-                                    </a>
                                     <p>
                                         <i class="fa fa-github"></i>
                                         github.com/nataliagiacobo
@@ -151,24 +236,25 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Barra Lateral -->
                 <div class="col-1 d-flex align-items-center justify-content-center ">
-                    <div class="position-fixed bottom-0">
+                    <div class="icons position-fixed bottom-0">
                         <p class="rotate">
-                            <a href="">natalia.giacobo@gmail.com</a>
+                            <a href="mailto:natalia.giacobo@gmail.com" target="_blank">natalia.giacobo@gmail.com</a>
                         </p>
                         <div class="line m-auto"></div>
                     </div>
 
                 </div>
+
             </div>
-
-
+        </div>
 
 
 
     </main>
 
-    <script src="script.js"></script>
 
 
     <footer>
@@ -178,6 +264,11 @@
 
 
 
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
 
 </body>
