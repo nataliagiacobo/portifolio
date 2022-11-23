@@ -68,7 +68,7 @@ nav {
     transition: top 0.3s;
     /* Transition effect when sliding down (and up) */
 
-    background-color: #06283d38;
+    /* background-color: #06283d38; */
     transition: background-color 2s ease 0s;
     height: 10vh;
     min-height: 50px;
@@ -101,21 +101,6 @@ nav {
     background-color: #47b5ff28;
 }
 
-.container-img {
-    background-color: #0a3f5f;
-    color: #DFF6FF;
-    width: 70%;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: 0.25rem;
-}
-
-.container-txt {
-    position: relative;
-    top: -250px;
-    left: 50%;
-    width: 50%;
-}
-
 .card {
     margin: 1rem 0;
 }
@@ -124,19 +109,26 @@ nav {
     font-weight: 200;
 }
 
+#contato p {
+    color: #DFF6FF;
+    font-weight: 200;
+}
+
+#contato p i {
+    color: #256D85;
+    margin-right: 10px;
+}
+
 .container {
     max-width: 100%;
     min-height: calc(100vh - 56px);
-}
-
-.navbar-expand-md {
-    background-color: #47B5FF;
 }
 
 .navbar-dark .navbar-nav .nav-link {
 
     color: #47B5FF;
 }
+
 
 @media (max-width: 720px) {
     h1 {
